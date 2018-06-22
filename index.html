@@ -4,10 +4,15 @@
         <meta charset="utf-8">
         <title></title>
         <script type="text/javascript" src="index.js"></script>
+        <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <input type="text" id="gibberish-input" placeholder="Enter gibberish here">
-        <button type="button" name="button" id="translate-button" onclick="translateGibberish()">†®&#229;˜ß¬&#229;†&#180; &#402;&#248;® µ&#180;</button>
-        <div id="english-out"></div>
+        <div class="contents">
+            <div class="static">
+                <input type="text" id="gibberish-input" placeholder="Enter gibberish here">
+                <button type="button" name="button" id="translate-button" onclick="translateGibberish()">†®&#229;˜ß¬&#229;†&#180; &#402;&#248;® µ&#180;</button>
+            </div>
+            <div id="english-out" class="output"></div>
+        </div>
     </body>
 </html>
