@@ -1,5 +1,7 @@
-const GIB_ALPHA = "å∫ç∂´ƒ©˙ˆ∆˚¬µ˜øπœ®ß†¨√∑≈¥ΩÅıÇÎ´Ï˝ÓˆÔÒÂ˜Ø∏Œ‰Íˇ¨◊„˛Á¸";
-const ALPHA = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const GIB_ALPHA =
+    "å∫ç∂´ƒ©˙ˆ∆˚¬µ˜øπœ®ß†¨√∑≈¥ΩÅıÇÎ´Ï˝ÓˆÔÒÂ˜Ø∏Œ‰Íˇ¨◊„˛Á¸`¡™£¢∞§¶•ªº–≠“‘«…æ≤≥÷`⁄€‹›ﬁﬂ‡°·‚—±”’»ÚÆ¯˘¿";
+const ALPHA =
+    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ`1234567890-=[]\\;',./~!@#$%^&*()_+{}|:\"<>?";
 const alpha_to_gib = { " ": " " };
 const gib_to_alpha = { " ": " " };
 
