@@ -21,6 +21,12 @@ function translateGibberish() {
     } else {
         translation = gtoa(gibberish);
     }
+    if (
+        gibberish.replace(/\s/g, "").toLowercase() === "steverocks!" ||
+        translation.replace(/\s/g, "").toLowercase() === "steverocks!"
+    ) {
+        window.location.href = "https://yashoss.github.io/StevePage/";
+    }
     document.getElementById("english-out").innerHTML = translation;
 }
 
