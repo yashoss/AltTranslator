@@ -22,8 +22,8 @@ function translateGibberish() {
         translation = gtoa(gibberish);
     }
     if (
-        gibberish.replace(/\s/g, "").toLowercase() === "steverocks!" ||
-        translation.replace(/\s/g, "").toLowercase() === "steverocks!"
+        gibberish.replace(/\s/g, "").toLowerCase() === "steverocks!" ||
+        translation.replace(/\s/g, "").toLowerCase() === "steverocks!"
     ) {
         window.location.href = "https://yashoss.github.io/StevePage/";
     }
