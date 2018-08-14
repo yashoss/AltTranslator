@@ -13,8 +13,10 @@ for (let i in ALPHA) {
     alpha_to_gib[ALPHA[i]] = GIB_ALPHA[i];
 }
 
-function translateGibberish() {
-    const gibberish = document.getElementById("gibberish-input").value;
+function translateGibberish(gibVar = null) {
+    const gibberish = gibVar
+        ? gibVar
+        : document.getElementById("gibberish-input").value;
     let translation = "";
     if (ALPHA.includes(gibberish[0])) {
         translation = atog(gibberish);
@@ -53,3 +55,21 @@ function gtoa(str) {
     }
     return translation;
 }
+
+function getUrlVars() {
+    const vars = {};
+    const parts = window.location.href.replace(
+        /[?&]+([^=&]+)=([^&]*)/gi,
+        function(m, key, value) {
+            vars[key] = value;
+        }
+    );
+    return vars;
+}
+
+function initialTranslate() {
+    const text = getUrlVars().text;
+    translateGibberish(text);
+}
+
+document.addEventListener("DOMContentLoaded", initialTranslate);
