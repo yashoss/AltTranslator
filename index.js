@@ -69,6 +69,7 @@ function getUrlVars() {
 
 function initialTranslate() {
     const text = getUrlVars().text;
+    console.log(text);
     translateGibberish(text);
 }
 
